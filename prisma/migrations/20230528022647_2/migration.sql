@@ -1,0 +1,4 @@
+-- AlterTable
+ALTER TABLE "Note" ADD COLUMN     "shared" BOOLEAN NOT NULL DEFAULT false,
+ADD COLUMN     "starred" BOOLEAN NOT NULL DEFAULT false,
+ADD COLUMN     "tags" TEXT[] DEFAULT ARRAY[]::TEXT[];
